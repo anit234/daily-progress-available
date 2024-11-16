@@ -1,0 +1,52 @@
+body{
+ margin: 0px;
+padding: 0;
+}
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-container{
+  background-color: #008080;
+  height: 80px;
+  border-bottom: 1px solid white;
+}
+/* When navbar-container is hovered, change nav-heading color */
+.navbar-container:hover{
+  background-color: white;
+  color: #008080;
+  border: 1px solid #008080;
+}
+/* this is CSS descendant selector */
+.navbar-container:hover .nav-heading {
+  color: #008080; /* Match the reversed styles */
+}
+.navbar-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.nav-heading{
+ margin: 0px;
+ font-size: 32px;
+ color: white;
+ margin-top: 20px;
+ cursor: pointer;
+}
+
+.main-container{
+padding: 50px;}
+
+.sub-container{
+ margin-top: 80px;
+ }
+
+.bmi-container{
+ color: black;
+ width: 500px;
+ height: auto;
+ border: 1px solid black;
+}
