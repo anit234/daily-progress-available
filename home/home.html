@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Playwrite+AU+VIC:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     </link>
-    <script src="home.js"></script>
+    <script src="home.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -24,10 +24,38 @@
     <div class="main-container">
         <div class="sub-container">
             <div class="bmi-container">
+                <h6 class="main-heading">BMI CALCULATOR</h6>
+                <div class="underline"></div>
                 <div class="gender-select">
-                    <div class="male-container">Male</div>
-                    <div class="fe-male-container">Female</div>
+                    <button class="male-button">MALE</button>
+                    <button class="female-button">FEMALE</button>
                 </div>
+                <div class="range-container">
+                    <div class="age-range">
+                        <h6 class="height-heading">HEIGHT</h6>
+                        <div class="height">153<span class="unit">CM</span></div>
+                        <input id="myinput" min="0" max="60" type="range" value="30" />
+                    </div>
+                </div>
+                <div class="weight-age-container">
+                    <div class="weight-container">
+                        <div class="weight-heading">WEIGHT</div>
+                        <div class="weight-number">74</div>
+                        <div class="inc-dec-button-container">
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                        </div>
+                    </div>
+                    <div class="age-container">
+                        <div class="age-heading">AGE</div>
+                        <div class="age-number">74</div>
+                        <div class="inc-dec-button-container">
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
