@@ -160,7 +160,7 @@ font-size: 16px;
 font-weight: 700 !important;
 }
 .weight-number{
-    margin-left: 24px;
+    margin-left: 30px;
     margin-top: 20px;
    font-family: "Faculty Glyphic", sans-serif;
    font-size: 42px;
@@ -174,7 +174,7 @@ font-size: 16px;
 font-weight: 700 !important;
 }
 .age-number{
-  margin-left: 24px;
+  margin-left: 30px;
     margin-top: 20px;
    font-family: "Faculty Glyphic", sans-serif;
    font-size: 42px;
@@ -195,4 +195,28 @@ border-radius: 50%;
 width: 50px;
 height: 50px;
 border-radius: 50%;
+}
+.result-container-main{
+ height: auto;
+    background-color: #1b263b;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.result-container{
+    display: flex;
+}
+.bmi-label{
+  padding: 16px 0px 8px 48px;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 24px;
+}
+.bmi-number{
+  padding: 16px 0px 8px 16px;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 24px;
+}
+.bmi-suggest{
+ padding: 0px 0px 8px 72px;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 16px;
 }
