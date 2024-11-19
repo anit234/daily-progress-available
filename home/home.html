@@ -11,7 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Playwrite+AU+VIC:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     </link>
-    <script src="home.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -27,31 +26,31 @@
                 <h6 class="main-heading">BMI CALCULATOR</h6>
                 <div class="underline"></div>
                 <div class="gender-select">
-                    <button class="male-button">MALE</button>
-                    <button class="female-button">FEMALE</button>
+                    <button class="male-button" id="male-selected-button">MALE</button>
+                    <button class="female-button" id="female-selected-button">FEMALE</button>
                 </div>
                 <div class="range-container">
                     <div class="age-range">
                         <h6 class="height-heading">HEIGHT</h6>
-                        <div class="height">153<span class="unit">CM</span></div>
-                        <input id="myinput" min="0" max="60" type="range" value="30" />
+                        <div class="height" id="height">153</div>
+                        <input id="myinput" min="0" max="300" type="range" step="0.5" value="130" />
                     </div>
                 </div>
                 <div class="weight-age-container">
                     <div class="weight-container">
                         <div class="weight-heading">WEIGHT</div>
-                        <div class="weight-number">74</div>
+                        <div class="weight-number" id="weight">0</div>
                         <div class="inc-dec-button-container">
-                            <button class="plus">+</button>
-                            <button class="minus">-</button>
+                            <button class="plus" id="plus-button">+</button>
+                            <button class="minus" id="minus-button">-</button>
                         </div>
                     </div>
                     <div class="age-container">
                         <div class="age-heading">AGE</div>
-                        <div class="age-number">74</div>
+                        <div class="age-number" id="age">0</div>
                         <div class="inc-dec-button-container">
-                            <button class="plus">+</button>
-                            <button class="minus">-</button>
+                            <button class="plus" id="age-plus">+</button>
+                            <button class="minus" id="age-minus">-</button>
                         </div>
                     </div>
 
@@ -59,9 +58,12 @@
                 <div class="result-container-main">
                     <div class="result-container">
                         <div class="bmi-label">Your BMI is : </div>
-                        <span class="bmi-number">24.9</span>
+                        <span class="bmi-number" id="bmi-result"></span>
                     </div>
-                    <div class="bmi-suggest">You are healty !!</div>
+                    <div class="bmi-suggest" id="bmi-suggest"></div>
+                </div>
+                <div class="result-button">
+                    <button class="calculate-button" id="bmi-calculate-button">CALCULATE YOUR BMI</button>
                 </div>
 
             </div>
@@ -69,7 +71,15 @@
         </div>
     </div>
     </div>
-
+    <div id="popup" class="popup-hidden">
+        <div class="popup-content">
+            <span id="closePopup" class="close-btn">&times;</span>
+            <div class="bmi-label">Your BMI is : </div>
+            <span class="bmi-number" id="bmi-result"></span>
+            <div class="bmi-suggest" id="bmi-suggest"></div>
+        </div>
+    </div>
+    <script src="home.js"></script>
 </body>
 
 </html>
