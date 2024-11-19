@@ -123,3 +123,5 @@ closePopup.addEventListener("click", () => {
 //   console.log(event.target);
 //   //    event.target
 // });
+
+//----------------------------Daily Practice--------------------------//
